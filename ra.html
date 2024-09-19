@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaPortfolio</title>
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo porto2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <nav class="flex flex-wrap items-center justify-between p-5" data-aos="fade-right">
+        <a href="" class="flex font-medium items-center text-slate-500 pl-6">
+            <span class="uppercase font-macondo">nauragistii</span>
+        </a>
+        <div class="flex md:hidden">
+            <button id="hamburger">
+                <img src="assets/menu.png" alt="Menu Icon" class="toggle block" height="50" width="50">
+                <img src="assets/cross.png" alt="Close Icon" class="toggle hidden" height="50" width="50">
+            </button>
+        </div>
+        <div
+            class="toggle hidden w-full md:w-auto md:flex text-right font-semibold mt-5 md:mt-0 border-t-2 border-red-400 md:border-none">
+            <a href="ra.html"
+                class="block md:inline-block text-slate-400 hover:text-[#7776B3] px-3 py-3 border-b-2 md:border-none uppercase font-spicy">Profile</a>
+            <a href="raa.html"
+                class="block md:inline-block text-slate-400 hover:text-[#7776B3] px-3 py-3 border-b-2 md:border-none uppercase font-spicy">Project</a>
+
+        </div>
+
+
+        <div class="toggle flex gap-2 border-0 py-4 px-6 focus:outline-none rounded-lg text-xl">
+            <a href="https://www.instagram.com/nauraagist/" target="_blank"><button
+                    class="text-white border-0 flex items-center justify-center w-10 h-10 focus:outline-none bg-[#176B87] hover:bg-[#EF5A6F] rounded-[50%] text-lg"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </button>
+            </a>
+            <a href="https://www.linkedin.com/in/naura-agisti-suhariyanto-a0452b284/" target="_blank">
+                <button
+                    class="text-white border-0 flex items-center justify-center w-10 h-10 focus:outline-none bg-[#176B87] hover:bg-[#EF5A6F] rounded-[50%] text-lg"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>
+                </button>
+            </a>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- about me -->
+    <section id="aboutme">
+        <div class="container mx-auto flex gap-3 px-5 py-16 md:flex-row flex-col items-center" data-aos="fade-down-left"
+            data-aos-delay="300">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 drop-shadow-xl sm:order-1 lg:order-2">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg class="w-61 fill-[#176B87]" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="m3.178,14c-.541,0-1.072-.201-1.549-.589-.854-.694-1.44-1.924-1.57-3.292-.211-2.222.854-3.909,2.589-4.104.707-.077,1.408.13,1.972.588.755.614,1.236,1.633,1.354,2.871h0c.224,2.345-.896,4.327-2.55,4.512-.082.009-.163.014-.244.014Zm-.232-7c-.062,0-.125.003-.187.011-1.16.129-1.861,1.369-1.705,3.015.105,1.106.556,2.082,1.206,2.61.234.191.604.408,1.051.357,1.069-.119,1.832-1.687,1.667-3.423h0c-.092-.969-.443-1.746-.989-2.189-.309-.25-.666-.38-1.043-.38Zm17.876,7c-.081,0-.163-.005-.244-.014-1.653-.185-2.773-2.167-2.55-4.512.118-1.237.598-2.257,1.354-2.871.563-.458,1.267-.665,1.972-.588,1.736.194,2.801,1.882,2.589,4.104-.13,1.367-.717,2.598-1.57,3.292-.478.388-1.009.589-1.549.589Zm.232-7c-.377,0-.734.13-1.043.38-.545.443-.896,1.221-.989,2.189-.165,1.736.598,3.304,1.667,3.423.444.05.817-.167,1.051-.357.65-.528,1.101-1.503,1.206-2.61.157-1.646-.544-2.885-1.705-3.015-.062-.007-.125-.011-.187-.011Zm-5.258,1c-.078,0-.155-.004-.233-.012-.831-.086-1.55-.629-2.024-1.528-.439-.833-.619-1.889-.506-2.972C13.266,1.26,14.662-.17,16.396.015c.835.087,1.555.545,2.026,1.29.471.745.661,1.714.546,2.803-.234,2.239-1.604,3.893-3.171,3.893Zm.316-7c-1.077,0-1.922,1.035-2.085,2.592-.093.889.048,1.742.396,2.401.313.594.755.949,1.243,1,1.077.102,2.126-1.258,2.307-2.991h0c.09-.862-.047-1.61-.397-2.164-.309-.487-.752-.774-1.284-.83-.061-.006-.12-.009-.179-.009Zm-7.909,7c-1.568,0-2.937-1.653-3.171-3.893h0c-.114-1.088.075-2.058.546-2.803C6.05.56,6.77.102,7.604.015c1.75-.188,3.13,1.245,3.362,3.472.113,1.084-.066,2.14-.506,2.973-.474.899-1.193,1.441-2.024,1.528-.078.008-.156.012-.233.012Zm-.316-7c-.059,0-.119.003-.179.009-.532.056-.976.343-1.284.83-.35.553-.487,1.301-.397,2.164h0c.181,1.733,1.241,3.093,2.307,2.991.488-.051.93-.406,1.243-1,.348-.66.489-1.513.396-2.402-.163-1.556-1.008-2.591-2.085-2.591Zm9.613,23c-.734,0-1.476-.211-2.261-.434-.933-.265-1.99-.566-3.239-.566s-2.307.301-3.239.566c-.785.223-1.526.434-2.261.434-1.686,0-3.5-1.095-3.5-3.5,0-4.708,4.923-8.5,9-8.5s9,3.792,9,8.5c0,2.405-1.814,3.5-3.5,3.5Zm-5.5-2c1.389,0,2.518.321,3.513.604.747.212,1.393.396,1.987.396,1.153,0,2.5-.655,2.5-2.5,0-4.039-4.399-7.5-8-7.5s-8,3.461-8,7.5c0,1.845,1.347,2.5,2.5,2.5.595,0,1.24-.184,1.987-.396.995-.283,2.124-.604,3.513-.604Z" />
+                </svg>
+
+
+            </div>
+            <div data-aos="fade-down-right">
+                <h1 class="sm:text-6xl leading-6 text-3xl mb-4 font-bold text-[#4D869C]">Hi, I'm Naura <span
+                        class="font-Macondo text-[#d8e4ee]">Agisti</span> Suhariyanto</h1>
+                <h3 class="sm:text-xl text-xl mb-4 font-bold text-slate-600 font-cormorant uppercase">Web / Mobile
+                    Developer</h3>
+                <h5 class="mb-8 leading-relaxed text-slate-400 font-nunito text-justify w-[650px] font-semibold">I don't
+                    just build websites; I help you achieve your business goals. From planning to design, development,
+                    and optimization.
+                </h5>
+                <a href="https://drive.google.com/file/d/1HqqcYDlKZkvUJ7nPj9g93vARNSnTgMUB/view?usp=sharing" target="_blank">
+                <button
+                    class="inline-flex text-[#7AB2B2] border-2 border-[#a9d1d1] py-2 px-4 focus:outline-none hover:bg-[#93cece] rounded-full text-lg">
+                    download my CV
+                </button>
+                 </a>
+            </div>
+        </div>
+    </section>
+    <!-- end about me -->
+
+    <!-- skill -->
+
+    <div class="container mx-auto bg-[#86B6F6] flex gap-20 justify-center p-10">
+        <div class="text-center "  data-aos="fade-up-right" data-aos-delay="300" >
+            <!-- Teks di atas SVG -->
+            <p class="mb-1 text-[#EEF5FF] font-Sofadi">HTML</p>
+        
+            <!-- SVG dengan gradient -->
+            <svg class="w-24 h-24" viewBox="0 0 100 100">
+                <!-- Definisikan gradient -->
+                <defs>
+                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#176B87; stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#EEF5FF; stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+        
+                <!-- Lingkaran dengan gradient -->
+                <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="40" cx="50%" cy="50%" />
+                <circle stroke-width="10" stroke-dasharray="250" stroke-dashoffset="50" stroke-linecap="round" 
+                    stroke="url(#gradient1)" fill="transparent" r="40" cx="50%" cy="50%" />
+                
+                <!-- Teks di tengah lingkaran -->
+                <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="text-lg fill-[#EEF5FF]">80%</text>
+            </svg>
+        </div>
+        <div class="text-center"  data-aos="fade-up" data-aos-delay="300">
+            <!-- Teks di atas SVG -->
+            <p class="mb-1 text-[#EEF5FF] font-Sofadi">Tailwind</p>
+        
+            <!-- SVG dengan gradient -->
+            <svg class="w-24 h-24" viewBox="0 0 100 100">
+                <!-- Definisikan gradient -->
+                <defs>
+                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#176B87; stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#EEF5FF; stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+        
+                <!-- Lingkaran dengan gradient -->
+                <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="40" cx="50%" cy="50%" />
+                <circle stroke-width="10" stroke-dasharray="180" stroke-dashoffset="50" stroke-linecap="round" 
+                    stroke="url(#gradient1)" fill="transparent" r="40" cx="50%" cy="50%" />
+                
+                <!-- Teks di tengah lingkaran -->
+                <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="text-lg fill-[#EEF5FF]">50%</text>
+            </svg>
+        </div>
+        <div class="text-center"  data-aos="fade-up" data-aos-delay="300">
+            <!-- Teks di atas SVG -->
+            <p class="mb-1 text-[#EEF5FF] font-Sofadi">JavaScript</p>
+        
+            <!-- SVG dengan gradient -->
+            <svg class="w-24 h-24 " viewBox="0 0 100 100" >
+                <!-- Definisikan gradient -->
+                <defs>
+                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#176B87; stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#EEF5FF; stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+        
+                <!-- Lingkaran dengan gradient -->
+                <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="40" cx="50%" cy="50%" />
+                <circle stroke-width="10" stroke-dasharray="140" stroke-dashoffset="50" stroke-linecap="round" 
+                    stroke="url(#gradient1)" fill="transparent" r="40" cx="50%" cy="50%" />
+                
+                <!-- Teks di tengah lingkaran -->
+                <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="text-lg fill-[#EEF5FF]">40%</text>
+            </svg>
+        </div>
+        <div class="text-center"  data-aos="fade-up-left" data-aos-delay="300">
+            <!-- Teks di atas SVG -->
+            <p class="mb-1 text-[#EEF5FF] font-Sofadi">DataBase</p>
+        
+            <!-- SVG dengan gradient -->
+            <svg class="w-24 h-24" viewBox="0 0 100 100">
+                <!-- Definisikan gradient -->
+                <defs>
+                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#176B87; stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#EEF5FF; stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+        
+                <!-- Lingkaran dengan gradient -->
+                <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="40" cx="50%" cy="50%" />
+                <circle stroke-width="10" stroke-dasharray="220" stroke-dashoffset="50" stroke-linecap="round" 
+                    stroke="url(#gradient1)" fill="transparent" r="40" cx="50%" cy="50%" />
+                
+                <!-- Teks di tengah lingkaran -->
+                <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="text-lg fill-[#EEF5FF]">60%</text>
+            </svg>
+        </div>
+              
+        <!-- <button
+            class="inline-flex text-[#B4D4FF] border-2 border-[#B4D4FF] py-2 px-6 focus:outline-none hover:bg-[#849cbc] rounded-full text-lg"
+            data-aos="fade-up-right" data-aos-delay="300">
+            HTML
+        </button>
+        <button
+            class="inline-flex text-[#B4D4FF] border-2 border-[#B4D4FF] py-2 px-6 focus:outline-none hover:bg-[#849cbc] rounded-full text-lg"
+            data-aos="fade-up" data-aos-delay="300">
+            Tailwind
+        </button>
+        <button
+            class="inline-flex text-[#B4D4FF] border-2 border-[#B4D4FF] py-2 px-6 focus:outline-none hover:bg-[#849cbc] rounded-full text-lg"
+            data-aos="fade-up" data-aos-delay="300">
+            JavaScript
+        </button>
+        <button
+            class="inline-flex text-[#B4D4FF] border-2 border-[#B4D4FF] py-2 px-6 focus:outline-none hover:bg-[#849cbc] rounded-full text-lg"
+            data-aos="fade-up-left" data-aos-delay="300">
+            DataBase
+        </button> -->
+
+    </div>
+    <!-- end skill -->
+
+    <!-- recent project -->
+
+    <div class="flex items-center justify-between">
+        <div class="px-20 py-20">
+            <h1 class="font-bold text-xl text-slate-500">
+                RECENT PROJECT
+            </h1>
+        </div>
+
+        <div
+            class="toggle hidden w-full md:w-auto md:flex text-right font-semibold mt-5 md:mt-0 border-t-2 border-red-400 md:border-none">
+            <a href="raa.html"
+                class="block md:inline-block text-slate-400 hover:text-[#7776B3] pr-36 py-5 border-b-2 md:border-none">SeeMore</a>
+
+        </div>
+    </div>
+
+    <!-- <div class="flex flex-wrap justify-between px-10 py-12">
+        <section class="flex flex-wrap -m-4">
+            <div class="p-4 items-center md:w-1/3 border-2 border-slate-400 rounded-xl ">
+                <img src="assets/project1.png" alt="song-eunseok">
+                <div>
+                    <h2>Kim Minjeong</h2>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-wrap -m-4">
+            <div class="p-4 items-center md:w-1/3 border-2 border-slate-400 rounded-xl ">
+                <img src="assets/project2.png" alt="song-eunseok">
+                <div>
+                    <h2>Kim Minjeong</h2>
+                </div>
+            </div>
+        </section>
+
+    </div> -->
+
+    <section id="whatIdo" >
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3 rounded-lg " data-aos="fade-up-right" data-aos-delay="300">
+                    <div class="flex rounded-lg h-full shadow-xl bg-opacity-60 p-8 flex-col duration-500 hover:skew-x-3">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-80 h-80 mr-3 inline-flex items-center justify-center rounded-full text-black flex-shrink-0">
+                                <img src="assets/project1.png" alt="" class="rounded-lg">
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-md font-ubuntu text-slate-700 text-justify justify-center font-Sofadi"> Birthday's Project with HTML,CSS, and JS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex rounded-lg h-full shadow-xl bg-opacity-60 p-8 flex-col duration-500 hover:skew-x-3">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-80 h-80 mr-3 inline-flex items-center justify-center rounded-full text-black flex-shrink-0">
+                                <img src="assets/project6.png" class="rounded-lg" alt="">
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-md font-ubuntu text-slate-700 text-justify font-Sofadi"> Project with Database </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex rounded-lg h-full shadow-xl bg-opacity-60 p-8 flex-col duration-500 hover:skew-x-3">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-80 h-80 mr-3 inline-flex items-center justify-center rounded-full text-black flex-shrink-0">
+                                <img src="assets/project3.png" alt="" class="rounded-lg">
+                            </div>
+                            
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-md font-ubuntu text-slate-700 text-justify font-Sofadi">
+                                ID Card with CSS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 
+    <svg class="w-24 h-24">
+        <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="40"
+            cx="50%" cy="50%" />
+        <circle class="text-[#2E236C]" stroke-width="10" stroke-dasharray="200" stroke-dashoffset="50"
+            stroke-linecap="round" stroke="currentColor" fill="transparent" r="40" cx="50%" cy="50%" />
+          </svg> -->
+
+    <!-- footer -->
+    <footer class="bg-slate-200 p-4">
+        <div class="mt-6 mx-auto text-center">
+            <p class="font-Pirata text-xl font-semibold text-slate-500">Copyright $copy; 2024 || All Right Reserved
+                with Gisauruss</p>
+        </div>
+    </footer>
+
+
+    <!-- js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // toggle navbar
+        document.getElementById('hamburger').onclick = function toggleMenu() {
+            const navToggle = document.getElementsByClassName('toggle');
+            for (let i = 0; i < navToggle.length; i++) {
+                navToggle[i].classList.toggle('hidden');
+            }
+        }
+    </script>
+</body>
+
+</html>
